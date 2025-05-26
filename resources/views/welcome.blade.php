@@ -53,7 +53,7 @@
                                 </a>
                             </nav>
                         </div>
-                        <a style="border-bottom:6px solid rgba(202, 202, 197, 0.5);" href="#contact" class="primary-button mobile-hidden w-inline-block">
+                        <a style="border-bottom:6px solid rgba(202, 202, 197, 0.5);" href="{{ route('register') }}" class="primary-button mobile-hidden w-inline-block">
                             <div class="primary-button-icon">
                                 <img loading="lazy" src="/img/670bb2eca4df38e7a6b7d3ae_arrow-up-right.svg" alt="" class="primary-button-arrow"/>
                             </div>
