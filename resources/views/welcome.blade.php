@@ -83,7 +83,7 @@
                             <div class="primary-button-icon">
                                 <img src="/img/673486c146a8fb4ced1c1a93_download.svg" loading="lazy" alt="" class="primary-button-arrow"/>
                             </div>
-                            <div>
+                            <div onclick="confirmerEtRediriger()">
                                 <div>Télécharger Maintenant</div>
                             </div>
                         </a>
@@ -484,7 +484,7 @@
                         </div>
                         <div class="footer-link-wrapper">
                             <div class="livvic-text">Liens</div>
-                            <div class="link-wrapper">
+                            <div onclick="confirmerEtRediriger()" class="link-wrapper">
                                 <a href="#cta" class="footer-link">Télécharger l'app</a>
                                 <div class="footer-link-underline"></div>
                             </div>
@@ -524,11 +524,11 @@
         <script src="/js/jquery-3.5.1.min.js" type="text/javascript"></script>
         <script src="/js/script.js" type="module"></script>
         <script>
-            let div = document.querySelectorAll('.faq-answer');
-            div[0].style.height = "106px";
-            let plus = document.querySelectorAll('.plus-line-animated');
-            console.log(div[0]);
-            console.log(plus[0]);
+            function confirmerEtRediriger() {
+                if (confirm("L'application n'est pas encore disponible, souhaitez-vous la version web ?")) {
+                    window.location.href = "/register"; // redirection
+                }
+            }
         </script>
     </body>
 </html>
